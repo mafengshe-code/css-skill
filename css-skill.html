@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-size: 0;
+        }
+        .container {
+            width: 300px;
+        }
+
+        .wrapper {
+            border: 2px solid #bbb;
+            border-radius: 10px;
+            padding: 20px;
+            background: cyan;
+            width: 100%;
+        }
+
+        .name {
+            background: #aaa;
+            padding: 10px;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .edu {
+            background: #ccc;
+            padding: 10px;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .mfs {
+            border: 5px solid #bbb;
+        }
+        .mfs .name{
+            padding: 20px;
+        }
+        .mfs .edu{
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <div class="name">我爱</div>
+        <div class="edu">前端</div>
+    </div>
+    <div class="wrapper">
+        <div class="name">css</div>
+        <div class="edu">真有趣</div>
+    </div>
+
+    <div class="wrapper mfs">
+        <div class="name">码蜂社</div>
+        <div class="edu">前端教育</div>
+    </div>
+</div>
+</body>
+</html>

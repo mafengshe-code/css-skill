@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .taiji {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .left {
+            height: 200px;
+            width: 100px;
+            background: red;
+            float: left;
+            border-radius: 100px 0 0 100px;
+            position: relative;
+        }
+
+        .right {
+            height: 200px;
+            width: 100px;
+            background: black;
+            float: left;
+            border-radius: 0 100px 100px 0;
+            position: relative;
+        }
+        .left-cyc{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            top:0;
+            right: -50px;
+            z-index: 1;
+        }
+        .right-cyc{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            bottom: 0;
+            left: -50px;
+        }
+
+        .left-sm-cyc{
+            width: 20px;
+            height: 20px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            top:40px;
+            right: -10px;
+            z-index: 2;
+        }
+
+        .right-sm-cyc{
+            width: 20px;
+            height: 20px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 40px;
+            left: -10px;
+        }
+    </style>
+</head>
+<body>
+<div class="taiji">
+    <div class="left">
+        <div class="left-cyc"></div>
+        <div class="left-sm-cyc"></div>
+    </div>
+    <div class="right">
+        <div class="right-cyc"></div>
+        <div class="right-sm-cyc"></div>
+    </div>
+</div>
+</body>
+</html>
